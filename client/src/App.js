@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import HomePage from './Pages/HomePage';
 
 import './App.css';
 
 const App = () => (
-  <div>
+  <Fragment>
     <HomePage />
-  </div>
+  </Fragment>
 );
 
 export default App;
