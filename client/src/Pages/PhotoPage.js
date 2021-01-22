@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import NavBar from '../Components/NavBar';
 
 function PhotoPage() {
   // Style Hook
@@ -13,7 +14,9 @@ function PhotoPage() {
   return (
     <Fragment>
       <div className={classes.background}>
-        
+        <div>
+          <NavBar />
+        </div>
       </div>
     </Fragment>
   ); 

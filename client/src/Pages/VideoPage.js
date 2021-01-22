@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import NavBar from '../Components/NavBar';
 
 function VideoPage() {
   // Style Hook
@@ -13,7 +14,9 @@ function VideoPage() {
   return (
     <Fragment>
       <div className={classes.background}>
-        
+        <div>
+          <NavBar />
+        </div>
       </div>
     </Fragment>
   ); 

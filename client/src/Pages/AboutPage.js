@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import NavBar from '../Components/NavBar';
+import Headshot from '../Components/About/Headshot';
 
 function AboutPage() {
   // Style Hook
@@ -13,10 +15,15 @@ function AboutPage() {
   return (
     <Fragment>
       <div className={classes.background}>
-        
+        <div>
+          <NavBar />
+        </div>
+        <div>
+          <Headshot />
+        </div>
       </div>
     </Fragment>
-  ); 
+  );
 }
 
 export default AboutPage;
