@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
-function PhotoPage() {
+function AboutPage() {
   // Style Hook
   const useStyles = makeStyles({
     background: {
@@ -19,4 +19,4 @@ function PhotoPage() {
   ); 
 }
 
-export default PhotoPage;
+export default AboutPage;

@@ -4,6 +4,8 @@ import PhotoCameraSharpIcon from '@material-ui/icons/PhotoCameraSharp';
 import VideocamSharpIcon from '@material-ui/icons/VideocamSharp';
 import StarSharpIcon from '@material-ui/icons/StarSharp';
 import FaceSharpIcon from '@material-ui/icons/FaceSharp';
+import { Link } from 'react-router-dom';
+import Button from '@material-ui/core/Button';
 
 function Icons() {
   // Style Hook
@@ -24,10 +26,26 @@ function Icons() {
   return (
     <Fragment>
       <div className={classes.iconDiv}>
-        <PhotoCameraSharpIcon className={classes.icon} />
-        <VideocamSharpIcon className={classes.icon} />
-        <StarSharpIcon className={classes.icon} />
-        <FaceSharpIcon className={classes.icon} />
+        <Button>
+          <Link to='/photos'>
+            <PhotoCameraSharpIcon className={classes.icon} />
+          </Link>
+        </Button>
+        <Button>
+          <Link to='/videos'>
+            <VideocamSharpIcon className={classes.icon} />
+          </Link>
+        </Button>
+        <Button>
+          <Link to='/animations'>
+            <StarSharpIcon className={classes.icon} />
+          </Link>
+        </Button>
+        <Button>
+          <Link to='/about'>
+            <FaceSharpIcon className={classes.icon} />
+          </Link>
+        </Button>
       </div>
     </Fragment>
   );
