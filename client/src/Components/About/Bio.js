@@ -7,28 +7,28 @@ function Bio() {
   const useStyles = makeStyles({
     bioDiv: {
       textAlign: 'center',
-      padding: '125px',
+      padding: '40px'
     },
     header: {
       overflowWrap: 'word-wrap',
       color: '#ffffff',
       fontSize: '50px',
-      fontFamily: 'Quicksand',
-      fontWeight: '500',
+      fontFamily: 'Work Sans',
+      fontWeight: '300',
     },
     paragraph: {
       overflowWrap: 'word-wrap',
       color: '#ffffff',
       fontSize: '20px',
       lineHeight: '2.3',
-      fontFamily: 'Quicksand',
-      fontWeight: '300',
+      fontFamily: 'Work Sans',
+      fontWeight: '500',
     },
     email: {
       color: '#ffffff',
       fontSize: '25px',
-      fontFamily: 'Quicksand',
-      fontWeight: '500',
+      fontFamily: 'Source Sans Pro',
+      fontWeight: '300',
     },
     iconDiv: {
       display: 'flex',
@@ -60,7 +60,7 @@ function Bio() {
         {
           // Make a hyperlink
         }
-        <h3 className={classes.email}>codyjbrown@gmail.com</h3>
+        <h3 className={classes.email}>codyjacobbrown@gmail.com</h3>
         <div className={classes.iconDiv}>
           <InstagramIcon className={classes.icon} />
           <p className={classes.iconLabel}>Instagram</p>

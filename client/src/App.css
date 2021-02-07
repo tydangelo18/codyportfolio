@@ -1,5 +1,21 @@
+/*Quicksand*/
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
+/*Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+/*Noto Sans JP*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap');
+/*Source Sans Pro*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
+/*Work Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap');
+/*Nunito Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&display=swap');
+/*Noto Sans TC*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400&display=swap');
+/*Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 
 body {
-  margin: 0;
+  background-color: #444444;
+  height: 100%;
 }

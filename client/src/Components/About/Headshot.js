@@ -6,9 +6,7 @@ function Headshot() {
   // Style Hook
   const useStyles = makeStyles({
     headshotDiv: {
-      backgroundColor: '#444444',
-      marginLeft: '100px',
-      marginTop: '50px',
+      padding: '40px',
     },
     photo: {
       width: '500px',

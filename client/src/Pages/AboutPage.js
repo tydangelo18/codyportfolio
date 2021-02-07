@@ -1,17 +1,13 @@
 import React, { Fragment } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid } from '@material-ui/core';
-import NavBar from '../Components/NavBar';
+import NavBar from '../Components/About/NavBar';
 import Headshot from '../Components/About/Headshot';
 import Bio from '../Components/About/Bio';
 
 function AboutPage() {
   // Style Hook
   const useStyles = makeStyles({
-    background: {
-      backgroundColor: '#444444',
-      height: '100vh',
-    },
     aboutDiv: {
       display: 'flex',
       flexFlow: 'row',
@@ -21,17 +17,29 @@ function AboutPage() {
   const classes = useStyles();
   return (
     <Fragment>
-      <div className={classes.background}>
+      <div>
         <div>
           <NavBar />
         </div>
         <div className={classes.aboutDiv}>
-          <div>
-            <Headshot />
-          </div>
-          <div>
-            <Bio />
-          </div>
+          <Grid container spacing={1}>
+            <Grid item xs={1}>
+              {
+                // Empty Space
+              }
+            </Grid>
+            <Grid item xs={5}>
+              <Headshot />
+            </Grid>
+            <Grid item xs={5}>
+              <Bio />
+            </Grid>
+            <Grid item xs={1}>
+              {
+                // Empty Space
+              }
+            </Grid>
+          </Grid>
         </div>
       </div>
     </Fragment>
