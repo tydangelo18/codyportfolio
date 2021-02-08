@@ -8,53 +8,43 @@ import PhotoCard from '../Components/Home/Cards/PhotoCard';
 import VideoCard from '../Components/Home/Cards/VideoCard';
 import AnimationCard from '../Components/Home/Cards/AnimationCard';
 // import AboutButton from '../Components/Home/About/AboutButton';
-// import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 
 function HomePage() {
   // Style Hook
-  // const useStyles = makeStyles({});
-  // const classes = useStyles();
+  const useStyles = makeStyles({
+    cardDiv: {
+      marginTop: '100px',
+    },
+  });
+  const classes = useStyles();
   return (
     <Fragment>
-      <div className='titleHeader'>
-        <Grid container>
+      <div>
+        <Grid container spacing={1}>
           <Grid item xs={12}>
             <Title />
           </Grid>
         </Grid>
-        <Grid
-          container
-          container
-          direction='row'
-          justify='center'
-          spacing={2}
-        >
-          <Grid>
-            <PhotoIcon />
-          </Grid>
-          <Grid>
-            <VideoIcon />
-          </Grid>
-          <Grid>
-            <AnimateIcon />
-          </Grid>
+        <Grid container direction='row' justify='center' spacing={2}>
+          <PhotoIcon />
+
+          <VideoIcon />
+
+          <AnimateIcon />
         </Grid>
+
         <Grid
+          className={classes.cardDiv}
           container
           direction='row'
-          justify='space-around'
-          alignItems='center'
-          spacing={1}
+          justify='space-evenly'
         >
-          <Grid>
-            <PhotoCard />
-          </Grid>
-          <Grid>
-            <VideoCard />
-          </Grid>
-          <Grid>
-            <AnimationCard />
-          </Grid>
+          <PhotoCard />
+
+          <VideoCard />
+
+          <AnimationCard />
         </Grid>
       </div>
     </Fragment>

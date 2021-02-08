@@ -11,10 +11,23 @@ import Camera from '../../../utils/camera.jpg';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    maxWidth: 375,
+    backgroundColor: '#dbe4eb',
   },
   media: {
-    height: 140,
+    height: 200,
+  },
+  cardTitle: {
+    fontFamily: 'Work Sans',
+    fontWeight: '300',
+  },
+  cardDesc: {
+    fontFamily: 'Work Sans',
+    fontWeight: '500',
+  },
+  btnFont: {
+    fontFamily: 'Source Sans Pro',
+    fontWeight: '500',
   },
 });
 
@@ -26,20 +39,27 @@ function PhotoCard() {
       <CardActionArea>
         <CardMedia className={classes.media} image={Camera} title='Camera' />
         <CardContent>
-          <Typography gutterBottom variant='h5' component='h2'>
+          <Typography
+            className={classes.cardTitle}
+            gutterBottom
+            variant='h5'
+            component='h2'
+          >
             Photography
           </Typography>
-          <Typography variant='body2' color='textSecondary' component='p'>
+          <Typography
+            className={classes.cardDesc}
+            variant='body2'
+            color='textSecondary'
+            component='p'
+          >
             I have been doing photography for over six years.
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size='small' color='primary'>
+        <Button className={classes.btnFont} size='small' color='primary'>
           Portfolio
-        </Button>
-        <Button size='small' color='primary'>
-          Learn More
         </Button>
       </CardActions>
     </Card>
