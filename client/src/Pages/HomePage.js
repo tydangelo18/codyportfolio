@@ -19,6 +19,9 @@ function HomePage() {
     cardDiv: {
       marginTop: '100px',
     },
+    anime: {
+      marginBottom: '10px',
+    },
   });
   const classes = useStyles();
   return (
@@ -55,7 +58,7 @@ function HomePage() {
         <Grid container justify='flex-end'>
           <VideoDesc />
         </Grid>
-        <Grid>
+        <Grid className={classes.anime}>
           <AnimeDesc />
         </Grid>
       </div>

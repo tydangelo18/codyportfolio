@@ -56,7 +56,7 @@ function PhotoCard() {
             color='textSecondary'
             component='p'
           >
-            I have been doing photography for over six years.
+            I have been doing photography for over six years and I love it.
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -68,5 +68,7 @@ function PhotoCard() {
     </Card>
   );
 }
+
+
 
 export default PhotoCard;
