@@ -8,6 +8,8 @@ import PhotoCard from '../Components/Home/Cards/PhotoCard';
 import VideoCard from '../Components/Home/Cards/VideoCard';
 import AnimationCard from '../Components/Home/Cards/AnimationCard';
 import PhotoDesc from '../Components/Home/Descriptions/PhotoDesc';
+import VideoDesc from '../Components/Home/Descriptions/VideoDesc';
+import AnimeDesc from '../Components/Home/Descriptions/AnimeDesc';
 // import AboutButton from '../Components/Home/About/AboutButton';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -49,6 +51,12 @@ function HomePage() {
         </Grid>
         <Grid>
           <PhotoDesc />
+        </Grid>
+        <Grid container justify='flex-end'>
+          <VideoDesc />
+        </Grid>
+        <Grid>
+          <AnimeDesc />
         </Grid>
       </div>
     </Fragment>
