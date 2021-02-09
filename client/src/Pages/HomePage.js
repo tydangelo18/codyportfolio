@@ -7,6 +7,7 @@ import AnimateIcon from '../Components/Home/Icons/AnimateIcon';
 import PhotoCard from '../Components/Home/Cards/PhotoCard';
 import VideoCard from '../Components/Home/Cards/VideoCard';
 import AnimationCard from '../Components/Home/Cards/AnimationCard';
+import PhotoDesc from '../Components/Home/Descriptions/PhotoDesc';
 // import AboutButton from '../Components/Home/About/AboutButton';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -45,6 +46,9 @@ function HomePage() {
           <VideoCard />
 
           <AnimationCard />
+        </Grid>
+        <Grid>
+          <PhotoDesc />
         </Grid>
       </div>
     </Fragment>
