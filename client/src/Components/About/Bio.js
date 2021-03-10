@@ -7,7 +7,7 @@ function Bio() {
   const useStyles = makeStyles({
     bioDiv: {
       textAlign: 'center',
-      padding: '40px'
+      padding: '40px',
     },
     header: {
       overflowWrap: 'word-wrap',
@@ -38,6 +38,7 @@ function Bio() {
     icon: {
       fontSize: '60px',
       color: '#d3d3d3',
+      textDecoration: 'none',
     },
     iconLabel: {
       fontSize: '15px',
@@ -50,19 +51,22 @@ function Bio() {
   return (
     <Fragment>
       <div className={classes.bioDiv}>
-        <h1 className={classes.header}>I'm Cody J. Brown</h1>
+        <h1 className={classes.header}>What's Up?</h1>
         <p className={classes.paragraph}>
-          I am a Photographer/Videographer/Animator from Austin, TX. I love
-          cartoons, reality tv, and my mom. Looking for a freelance
-          photographer/videographer/animator? Look no further. Please check out
-          my portfolios and email me to set up a consultation. Thank you.{' '}
+          I’m Cody Brown — videographer; photographer; editor; animator; and
+          lover of film, television and cartoons. I’ve been editing video since
+          I was 15, and the camera in my hands came shortly after. I love Dallas
+          Sports and my kitty, Ramona. I’m located in Austin, TX. If you like my
+          work, feel free to let me know!{' '}
         </p>
         {
           // Make a hyperlink
         }
         <h3 className={classes.email}>codyjacobbrown@gmail.com</h3>
         <div className={classes.iconDiv}>
-          <InstagramIcon className={classes.icon} />
+          <a href='https://www.instagram.com/cjbphot/' target='null'>
+            <InstagramIcon className={classes.icon} />
+          </a>
           <p className={classes.iconLabel}>Instagram</p>
         </div>
       </div>

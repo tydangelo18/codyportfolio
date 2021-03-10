@@ -35,21 +35,6 @@ function NavBar() {
               <HomeSharpIcon className={classes.icon} />
             </Link>
           </Button>
-          <Button>
-            <Link to='/photos'>
-              <PhotoCameraSharpIcon className={classes.icon} />
-            </Link>
-          </Button>
-          <Button>
-            <Link to='/videos'>
-              <VideocamSharpIcon className={classes.icon} />
-            </Link>
-          </Button>
-          <Button>
-            <Link to='/animations'>
-              <StarSharpIcon className={classes.icon} />
-            </Link>
-          </Button>
         </div>
       </div>
     </Fragment>
