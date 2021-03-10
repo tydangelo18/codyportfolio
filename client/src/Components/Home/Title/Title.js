@@ -14,7 +14,7 @@ function Title() {
       fontWeight: '500',
       fontSize: '85px',
       margin: '10px',
-      color: '#dbe4eb',
+      color: '#d3d3d3',
     },
   });
   const classes = useStyles();

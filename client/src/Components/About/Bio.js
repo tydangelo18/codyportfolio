@@ -11,21 +11,21 @@ function Bio() {
     },
     header: {
       overflowWrap: 'word-wrap',
-      color: '#ffffff',
+      color: '#d3d3d3',
       fontSize: '50px',
       fontFamily: 'Work Sans',
       fontWeight: '300',
     },
     paragraph: {
       overflowWrap: 'word-wrap',
-      color: '#ffffff',
+      color: '#d3d3d3',
       fontSize: '20px',
       lineHeight: '2.3',
       fontFamily: 'Work Sans',
       fontWeight: '500',
     },
     email: {
-      color: '#ffffff',
+      color: '#d3d3d3',
       fontSize: '25px',
       fontFamily: 'Source Sans Pro',
       fontWeight: '300',
@@ -37,11 +37,11 @@ function Bio() {
     },
     icon: {
       fontSize: '60px',
-      color: '#dbe4eb',
+      color: '#d3d3d3',
     },
     iconLabel: {
       fontSize: '15px',
-      color: '#ffffff',
+      color: '#d3d3d3',
       marginTop: '1px',
       fontFamily: 'Quicksand',
     },

@@ -26,7 +26,7 @@ function AnimeDesc() {
     },
     imgP: {
       overflowWrap: 'word-wrap',
-      color: '#ffffff',
+      color: '#d3d3d3',
       fontSize: '20px',
       lineHeight: '2.8',
       fontFamily: 'Work Sans',

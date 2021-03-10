@@ -22,7 +22,7 @@ function NavBar() {
       margin: '5px',
       padding: '7px',
       fontSize: '40px',
-      color: '#dbe4eb',
+      color: '#d3d3d3',
     },
   });
   const classes = useStyles();

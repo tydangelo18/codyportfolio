@@ -15,11 +15,11 @@ function VideoIcon() {
 
     icon: {
       fontSize: '30px',
-      color: '#dbe4eb',
+      color: '#d3d3d3',
     },
     iconLabel: {
       fontSize: '10px',
-      color: '#ffffff',
+      color: '#d3d3d3',
       marginTop: '1px',
       fontFamily: 'Quicksand',
     },
