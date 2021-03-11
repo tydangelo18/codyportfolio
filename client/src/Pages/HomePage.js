@@ -17,10 +17,10 @@ function HomePage() {
   // Style Hook
   const useStyles = makeStyles({
     cardDiv: {
-      marginTop: '60px',
+      marginTop: '40px',
     },
-    anime: {
-      marginBottom: '10px',
+    iconDiv: {
+      marginTop: '20px',
     },
   });
   const classes = useStyles();
@@ -32,7 +32,13 @@ function HomePage() {
             <Title />
           </Grid>
         </Grid>
-        <Grid container direction='row' justify='center' spacing={2}>
+        <Grid
+          container
+          direction='row'
+          justify='center'
+          spacing={2}
+          className={classes.iconDiv}
+        >
           <PhotoIcon />
 
           <VideoIcon />
@@ -52,13 +58,13 @@ function HomePage() {
 
           <AnimationCard />
         </Grid>
-        <Grid>
+        <Grid container justify='center'>
           <PhotoDesc />
         </Grid>
-        <Grid container justify='flex-end'>
+        <Grid container justify='center'>
           <VideoDesc />
         </Grid>
-        <Grid className={classes.anime}>
+        <Grid container justify='center'>
           <AnimeDesc />
         </Grid>
       </div>

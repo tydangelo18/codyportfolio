@@ -11,23 +11,22 @@ function VideoDesc() {
   }, []);
   const useStyles = makeStyles({
     boxes: {
-      marginTop: '100px',
-      marginRight: '50px',
+      marginTop: '150px',
       height: '200px',
-      width: '1000px',
+      width: '1500px',
       display: 'flex',
       flexDirection: 'row-reverse',
       // boxShadow: '0px 12px 18px -6px rgba(0, 0, 0, 0.3) '
     },
     photo: {
-      width: '300px',
-      height: '250px',
+      width: '350px',
+      height: '300px',
       objectFit: 'cover',
     },
     imgP: {
       overflowWrap: 'word-wrap',
       color: '#d3d3d3',
-      fontSize: '20px',
+      fontSize: '28px',
       lineHeight: '2.8',
       fontFamily: 'Work Sans',
       fontWeight: '300',

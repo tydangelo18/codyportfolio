@@ -14,11 +14,11 @@ function VideoIcon() {
     },
 
     icon: {
-      fontSize: '30px',
+      fontSize: '50px',
       color: '#d3d3d3',
     },
     iconLabel: {
-      fontSize: '10px',
+      fontSize: '15px',
       color: '#d3d3d3',
       marginTop: '1px',
       fontFamily: 'Quicksand',

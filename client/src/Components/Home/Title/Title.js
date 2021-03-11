@@ -11,7 +11,7 @@ function Title() {
     },
     title: {
       fontFamily: 'Work Sans',
-      fontWeight: '500',
+      fontWeight: '100',
       fontSize: '85px',
       margin: '10px',
       color: '#d3d3d3',
