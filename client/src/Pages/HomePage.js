@@ -17,7 +17,7 @@ function HomePage() {
   // Style Hook
   const useStyles = makeStyles({
     cardDiv: {
-      marginTop: '100px',
+      marginTop: '60px',
     },
     anime: {
       marginBottom: '10px',
@@ -27,7 +27,7 @@ function HomePage() {
   return (
     <Fragment>
       <div>
-        <Grid container spacing={1}>
+        <Grid container>
           <Grid item xs={12}>
             <Title />
           </Grid>
@@ -44,7 +44,7 @@ function HomePage() {
           className={classes.cardDiv}
           container
           direction='row'
-          justify='space-evenly'
+          justify='center'
         >
           <PhotoCard />
 

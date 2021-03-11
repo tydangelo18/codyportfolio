@@ -2,20 +2,21 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-
+import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Camera from '../../../utils/camera.jpg';
 
 const useStyles = makeStyles({
   root: {
-    width: '500px',
+    maxWidth: 375,
     backgroundColor: '#dbe4eb',
-    border: '1px solid #d3d3d3',
+    border: '1px solid #ffffff',
   },
   media: {
-    height: 300,
+    height: 200,
   },
   cardTitle: {
     fontFamily: 'Work Sans',
@@ -57,8 +58,15 @@ function PhotoCard() {
           </Typography>
         </CardContent>
       </CardActionArea>
+      <CardActions>
+        <Button className={classes.btnFont} size='small' color='primary'>
+          Portfolio
+        </Button>
+      </CardActions>
     </Card>
   );
 }
+
+
 
 export default PhotoCard;

@@ -1,8 +1,5 @@
 import React, { Fragment } from 'react';
 import HomeSharpIcon from '@material-ui/icons/HomeSharp';
-import PhotoCameraSharpIcon from '@material-ui/icons/PhotoCameraSharp';
-import VideocamSharpIcon from '@material-ui/icons/VideocamSharp';
-import StarSharpIcon from '@material-ui/icons/StarSharp';
 import { makeStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
