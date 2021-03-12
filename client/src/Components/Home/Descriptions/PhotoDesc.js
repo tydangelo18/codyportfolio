@@ -11,7 +11,6 @@ function PhotoDesc() {
   }, []);
   const useStyles = makeStyles({
     boxes: {
-      marginTop: '120px',
       height: '200px',
       width: '1500px',
       display: 'flex',

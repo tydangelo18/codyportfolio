@@ -36,7 +36,10 @@ function VideoCard() {
   return (
     <Card className={classes.root}>
       <CardActionArea>
-        <CardMedia className={classes.media} image={Cinema} title='Cinema' />
+        <a href='https://vimeo.com/codyjacobbrown' target='null'>
+          <CardMedia className={classes.media} image={Cinema} title='Cinema' />
+        </a>
+
         <CardContent>
           <Typography
             className={classes.cardTitle}
@@ -52,7 +55,8 @@ function VideoCard() {
             color='textSecondary'
             component='p'
           >
-            I have been doing videography for over two years as a career.
+            I have been doing videography for over two years as a career. Click
+            this card to check out my videography portfolio.
           </Typography>
         </CardContent>
       </CardActionArea>

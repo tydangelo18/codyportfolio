@@ -54,6 +54,7 @@ function PhotoCard() {
             component='p'
           >
             I have been doing photography for over six years and I love it.
+            Click this card to check out my photography portfolio.
           </Typography>
         </CardContent>
       </CardActionArea>

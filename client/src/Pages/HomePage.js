@@ -10,7 +10,6 @@ import AnimationCard from '../Components/Home/Cards/AnimationCard';
 import PhotoDesc from '../Components/Home/Descriptions/PhotoDesc';
 import VideoDesc from '../Components/Home/Descriptions/VideoDesc';
 import AnimeDesc from '../Components/Home/Descriptions/AnimeDesc';
-// import AboutButton from '../Components/Home/About/AboutButton';
 import { makeStyles } from '@material-ui/core/styles';
 
 function HomePage() {
@@ -21,6 +20,9 @@ function HomePage() {
     },
     iconDiv: {
       marginTop: '20px',
+    },
+    photoDescDiv: {
+      marginTop: '80px',
     },
   });
   const classes = useStyles();
@@ -58,7 +60,7 @@ function HomePage() {
 
           <AnimationCard />
         </Grid>
-        <Grid container justify='center'>
+        <Grid container justify='center' className={classes.photoDescDiv}>
           <PhotoDesc />
         </Grid>
         <Grid container justify='center'>
