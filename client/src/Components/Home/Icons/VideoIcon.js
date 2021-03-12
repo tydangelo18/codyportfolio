@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import VideocamOutlinedIcon from '@material-ui/icons/VideocamOutlined';
+import Button from '@material-ui/core/Button';
 
 function VideoIcon() {
   // Style Hook
@@ -22,15 +23,18 @@ function VideoIcon() {
       color: '#d3d3d3',
       marginTop: '1px',
       fontFamily: 'Quicksand',
+      textTransform: 'capitalize',
     },
   });
   const classes = useStyles();
   return (
     <Fragment>
-      <div className={classes.videoIconDiv}>
-        <VideocamOutlinedIcon className={classes.icon} />
-        <p className={classes.iconLabel}>Videographer</p>
-      </div>
+      <Button>
+        <div className={classes.videoIconDiv}>
+          <VideocamOutlinedIcon className={classes.icon} />
+          <p className={classes.iconLabel}>Videographer</p>
+        </div>
+      </Button>
     </Fragment>
   );
 }

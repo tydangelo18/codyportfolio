@@ -1,16 +1,16 @@
 import React, { Fragment } from 'react';
+import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
 import { makeStyles } from '@material-ui/core/styles';
-import PhotoCameraOutlinedIcon from '@material-ui/icons/PhotoCameraOutlined';
+import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 
-function PhotoIcon() {
+function HomeIcon() {
   // Style Hook
   const useStyles = makeStyles({
-    photoIconDiv: {
+    homeIconDiv: {
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      marginRight: '15px',
     },
     icon: {
       fontSize: '50px',
@@ -23,18 +23,23 @@ function PhotoIcon() {
       fontFamily: 'Quicksand',
       textTransform: 'capitalize',
     },
+    linked: {
+      textDecoration: 'none',
+    },
   });
   const classes = useStyles();
   return (
     <Fragment>
       <Button>
-        <div className={classes.photoIconDiv}>
-          <PhotoCameraOutlinedIcon className={classes.icon} />
-          <p className={classes.iconLabel}>Photographer</p>
-        </div>
+        <Link to='/' className={classes.linked}>
+          <div className={classes.homeIconDiv}>
+            <HomeOutlinedIcon className={classes.icon} />
+            <p className={classes.iconLabel}>Home</p>
+          </div>
+        </Link>
       </Button>
     </Fragment>
   );
 }
 
-export default PhotoIcon;
+export default HomeIcon;

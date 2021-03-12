@@ -4,6 +4,7 @@ import Title from '../Components/Home/Title/Title';
 import PhotoIcon from '../Components/Home/Icons/PhotoIcon';
 import VideoIcon from '../Components/Home/Icons/VideoIcon';
 import AnimateIcon from '../Components/Home/Icons/AnimateIcon';
+import AboutIcon from '../Components/Home/Icons/AboutIcon';
 import PhotoCard from '../Components/Home/Cards/PhotoCard';
 import VideoCard from '../Components/Home/Cards/VideoCard';
 import AnimationCard from '../Components/Home/Cards/AnimationCard';
@@ -46,6 +47,8 @@ function HomePage() {
           <VideoIcon />
 
           <AnimateIcon />
+
+          <AboutIcon />
         </Grid>
 
         <Grid
