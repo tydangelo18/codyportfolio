@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 function Title() {
   // Style Hook
-  const useStyles = makeStyles({
+  const useStyles = makeStyles((theme) => ({
     titleDiv: {
       display: 'flex',
       flexFlow: 'column',
@@ -15,8 +15,14 @@ function Title() {
       fontSize: '85px',
       margin: '10px',
       color: '#d3d3d3',
+      [theme.breakpoints.between('xs', 'sm')]: {
+        fontSize: '48px',
+      },
+      [theme.breakpoints.between('sm', 'md')]: {
+        fontSize: '85px',
+      },
     },
-  });
+  }));
   const classes = useStyles();
   return (
     <Fragment>
