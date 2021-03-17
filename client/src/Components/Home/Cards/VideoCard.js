@@ -55,8 +55,10 @@ function VideoCard() {
             color='textSecondary'
             component='p'
           >
-            I have been doing videography for over two years as a career. Click
-            this card to check out my videography portfolio.
+            I have been doing videography for over two years as a career.{' '}
+            <strong>
+              Click this card to check out my videography portfolio.
+            </strong>
           </Typography>
         </CardContent>
       </CardActionArea>

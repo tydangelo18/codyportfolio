@@ -52,8 +52,10 @@ function AnimationCard() {
             color='textSecondary'
             component='p'
           >
-            I have been doing animations for a little bit of time. Click this
-            card to check out my animation portfolio.
+            I have been doing animations for a little bit of time.{' '}
+            <strong>
+              Click this card to check out my animation portfolio.
+            </strong>
           </Typography>
         </CardContent>
       </CardActionArea>

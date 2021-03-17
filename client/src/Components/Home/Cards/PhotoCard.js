@@ -53,8 +53,8 @@ function PhotoCard() {
             color='textSecondary'
             component='p'
           >
-            I have been doing photography for over six years and I love it.
-            Click this card to check out my photography portfolio.
+            I have been doing photography for over six years and I love it.{' '}
+            <strong>Click this card to check out my photography portfolio.</strong>
           </Typography>
         </CardContent>
       </CardActionArea>
