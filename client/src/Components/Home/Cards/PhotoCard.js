@@ -8,14 +8,20 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Camera from '../../../utils/camera.jpg';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
     width: '500px',
     backgroundColor: '#dbe4eb',
     border: '1px solid #d3d3d3',
+    [theme.breakpoints.between('md', 'lg')]: {
+      width: '375px',
+    },
   },
   media: {
     height: 300,
+    [theme.breakpoints.between('md', 'lg')]: {
+      height: '275px',
+    },
   },
   cardTitle: {
     fontFamily: 'Work Sans',
@@ -29,7 +35,7 @@ const useStyles = makeStyles({
     fontFamily: 'Source Sans Pro',
     fontWeight: '500',
   },
-});
+}));
 
 function PhotoCard() {
   const classes = useStyles();
