@@ -19,6 +19,14 @@ function VideoDesc() {
       [theme.breakpoints.between('md', 'lg')]: {
         width: '1130px',
       },
+      [theme.breakpoints.between('xs', 'sm')]: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        width: '400px',
+        height: '300px',
+        marginTop: '300px'
+      },
       // boxShadow: '0px 12px 18px -6px rgba(0, 0, 0, 0.3) '
     },
     photo: {
@@ -36,6 +44,9 @@ function VideoDesc() {
       margin: '25px',
       [theme.breakpoints.between('md', 'lg')]: {
         fontSize: '24px',
+      },
+      [theme.breakpoints.between('xs', 'sm')]: {
+        fontSize: '15px',
       },
     },
   }));
