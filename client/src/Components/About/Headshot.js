@@ -4,7 +4,7 @@ import headshot from '../../utils/codyheadshot.jpg';
 
 function Headshot() {
   // Style Hook
-  const useStyles = makeStyles({
+  const useStyles = makeStyles((theme) => ({
     headshotDiv: {
       padding: '40px',
     },
@@ -14,8 +14,16 @@ function Headshot() {
       border: '1px solid #d3d3d3',
       boxShadow:
         'rgba(228, 241, 254, 1) 0px 0px 80px -30px, rgba(149, 165, 166, 1) 0px 30px 60px -30px',
+      [theme.breakpoints.between('xs', 'sm')]: {
+        width: '300px',
+        height: '375px',
+      },
+      [theme.breakpoints.between('sm', 'md')]: {
+        width: '500px',
+        height: '600px',
+      },
     },
-  });
+  }));
   const classes = useStyles();
   return (
     <Fragment>

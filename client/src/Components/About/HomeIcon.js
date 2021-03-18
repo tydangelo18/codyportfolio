@@ -28,6 +28,12 @@ function HomeIcon() {
       marginTop: '1px',
       fontFamily: 'Quicksand',
       textTransform: 'capitalize',
+      [theme.breakpoints.between('xs', 'sm')]: {
+        fontSize: '12px',
+      },
+      [theme.breakpoints.between('sm', 'md')]: {
+        fontSize: '15px',
+      },
     },
     linked: {
       textDecoration: 'none',
