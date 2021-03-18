@@ -6,7 +6,7 @@ import Button from '@material-ui/core/Button';
 
 function HomeIcon() {
   // Style Hook
-  const useStyles = makeStyles({
+  const useStyles = makeStyles((theme) => ({
     homeIconDiv: {
       display: 'flex',
       flexDirection: 'column',
@@ -15,6 +15,12 @@ function HomeIcon() {
     icon: {
       fontSize: '50px',
       color: '#d3d3d3',
+      [theme.breakpoints.between('xs', 'sm')]: {
+        fontSize: '30px',
+      },
+      [theme.breakpoints.between('sm', 'md')]: {
+        fontSize: '50px',
+      },
     },
     iconLabel: {
       fontSize: '15px',
@@ -26,7 +32,7 @@ function HomeIcon() {
     linked: {
       textDecoration: 'none',
     },
-  });
+  }));
   const classes = useStyles();
   return (
     <Fragment>
