@@ -9,12 +9,15 @@ function PhotoDesc() {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
-  const useStyles = makeStyles({
+  const useStyles = makeStyles((theme) => ({
     boxes: {
       height: '200px',
       width: '1500px',
       display: 'flex',
       flexDirection: 'row',
+      [theme.breakpoints.between('md', 'lg')]: {
+        width: '1130px',
+      },
       // boxShadow: '0px 12px 18px -6px rgba(0, 0, 0, 0.3) '
     },
     photo: {
@@ -30,8 +33,11 @@ function PhotoDesc() {
       fontFamily: 'Work Sans',
       fontWeight: '300',
       margin: '25px',
+      [theme.breakpoints.between('md', 'lg')]: {
+        fontSize: '24px',
+      },
     },
-  });
+  }));
   const classes = useStyles();
   return (
     <Fragment>
