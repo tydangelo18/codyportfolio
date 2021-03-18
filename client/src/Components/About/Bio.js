@@ -5,10 +5,21 @@ import Button from '@material-ui/core/Button';
 
 function Bio() {
   // Style Hook
-  const useStyles = makeStyles({
+  const useStyles = makeStyles((theme) => ({
     bioDiv: {
-      textAlign: 'center',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
       padding: '40px',
+      marginRight: '50px',
+      [theme.breakpoints.between('xs', 'sm')]: {
+        padding: '0px',
+        margin: '0px',
+      },
+      [theme.breakpoints.between('sm', 'md')]: {
+        padding: '40px',
+        marginRight: '50px',
+      },
     },
     header: {
       overflowWrap: 'word-wrap',
@@ -16,28 +27,58 @@ function Bio() {
       fontSize: '50px',
       fontFamily: 'Work Sans',
       fontWeight: '300',
+      [theme.breakpoints.between('xs', 'sm')]: {
+        fontSize: '30px',
+      },
+      [theme.breakpoints.between('sm', 'md')]: {
+        fontSize: '50px',
+      },
     },
     paragraph: {
       overflowWrap: 'word-wrap',
+      textAlign: 'center',
       color: '#d3d3d3',
       fontSize: '20px',
       lineHeight: '2.3',
       fontFamily: 'Work Sans',
       fontWeight: '500',
+      [theme.breakpoints.between('xs', 'sm')]: {
+        fontSize: '15px',
+        lineHeight: '1.7',
+      },
+      [theme.breakpoints.between('sm', 'md')]: {
+        fontSize: '20px',
+        lineHeight: '2.3',
+      },
     },
     subPara: {
       overflowWrap: 'word-wrap',
+      textAlign: 'center',
       color: '#d3d3d3',
       fontSize: '20px',
       lineHeight: '2.3',
       fontFamily: 'Work Sans',
       fontWeight: '500',
+      [theme.breakpoints.between('xs', 'sm')]: {
+        fontSize: '15px',
+        lineHeight: '1.7',
+      },
+      [theme.breakpoints.between('sm', 'md')]: {
+        fontSize: '20px',
+        lineHeight: '2.3',
+      },
     },
     email: {
       color: '#d3d3d3',
       fontSize: '25px',
       fontFamily: 'Source Sans Pro',
       fontWeight: '300',
+      [theme.breakpoints.between('xs', 'sm')]: {
+        fontSize: '20px',
+      },
+      [theme.breakpoints.between('sm', 'md')]: {
+        fontSize: '25px',
+      },
     },
     iconDiv: {
       display: 'flex',
@@ -48,6 +89,12 @@ function Bio() {
       fontSize: '60px',
       color: '#d3d3d3',
       textDecoration: 'none',
+      [theme.breakpoints.between('xs', 'sm')]: {
+        fontSize: '30px',
+      },
+      [theme.breakpoints.between('sm', 'md')]: {
+        fontSize: '50px',
+      },
     },
     iconLabel: {
       fontSize: '15px',
@@ -56,8 +103,14 @@ function Bio() {
       fontFamily: 'Quicksand',
       textTransform: 'capitalize',
       textDecoration: 'none',
+      [theme.breakpoints.between('xs', 'sm')]: {
+        fontSize: '12px',
+      },
+      [theme.breakpoints.between('sm', 'md')]: {
+        fontSize: '15px',
+      },
     },
-  });
+  }));
   const classes = useStyles();
   return (
     <Fragment>
@@ -69,7 +122,9 @@ function Bio() {
           I was 15, and the camera in my hands came shortly after. I love Dallas
           Sports and my kitty, Ramona. I’m located in Austin, TX.{' '}
         </p>
-        <p className={classes.subPara}>If you like my work, feel free to let me know!</p>
+        <p className={classes.subPara}>
+          If you like my work, feel free to let me know!
+        </p>
         {
           // Make a hyperlink
         }

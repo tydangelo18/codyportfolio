@@ -7,13 +7,23 @@ import Bio from '../Components/About/Bio';
 
 function AboutPage() {
   // Style Hook
-  const useStyles = makeStyles({
+  const useStyles = makeStyles((theme) => ({
     aboutDiv: {
       display: 'flex',
       flexFlow: 'row',
-      justifyContent: 'space-around',
+      justifyContent: 'space-between',
+      [theme.breakpoints.between('xs', 'sm')]: {
+        display: 'flex',
+        flexFlow: 'column',
+        alignItems: 'center',
+      },
+      [theme.breakpoints.between('sm', 'md')]: {
+        display: 'flex',
+        flexFlow: 'row',
+        justifyContent: 'space-between',
+      },
     },
-  });
+  }));
   const classes = useStyles();
   return (
     <Fragment>
@@ -22,23 +32,11 @@ function AboutPage() {
           <HomeIcon />
         </Grid>
         <div className={classes.aboutDiv}>
-          <Grid container spacing={1}>
-            <Grid item xs={1}>
-              {
-                // Empty Space
-              }
-            </Grid>
-            <Grid item xs={5}>
-              <Headshot />
-            </Grid>
-            <Grid item xs={5}>
-              <Bio />
-            </Grid>
-            <Grid item xs={1}>
-              {
-                // Empty Space
-              }
-            </Grid>
+          <Grid item xs={6}>
+            <Headshot />
+          </Grid>
+          <Grid item xs={6}>
+            <Bio />
           </Grid>
         </div>
       </div>

@@ -7,6 +7,10 @@ function Headshot() {
   const useStyles = makeStyles((theme) => ({
     headshotDiv: {
       padding: '40px',
+      [theme.breakpoints.between('xs', 'sm')]: {
+        display: 'flex',
+        justifyContent: 'center',
+      },
     },
     photo: {
       width: '500px',
@@ -14,9 +18,11 @@ function Headshot() {
       border: '1px solid #d3d3d3',
       boxShadow:
         'rgba(228, 241, 254, 1) 0px 0px 80px -30px, rgba(149, 165, 166, 1) 0px 30px 60px -30px',
+      marginLeft: '50px',
       [theme.breakpoints.between('xs', 'sm')]: {
         width: '300px',
         height: '375px',
+        marginLeft: '0px',
       },
       [theme.breakpoints.between('sm', 'md')]: {
         width: '500px',
