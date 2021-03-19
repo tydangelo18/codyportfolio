@@ -17,8 +17,8 @@ function Bio() {
         margin: '0px',
       },
       [theme.breakpoints.between('sm', 'md')]: {
-        padding: '40px',
-        marginRight: '50px',
+        padding: '0px',
+        margin: '0px',
       },
     },
     header: {
@@ -44,7 +44,7 @@ function Bio() {
       fontWeight: '500',
       [theme.breakpoints.between('xs', 'sm')]: {
         fontSize: '15px',
-        lineHeight: '1.7',
+        lineHeight: '1.9',
       },
       [theme.breakpoints.between('sm', 'md')]: {
         fontSize: '20px',
@@ -61,7 +61,7 @@ function Bio() {
       fontWeight: '500',
       [theme.breakpoints.between('xs', 'sm')]: {
         fontSize: '15px',
-        lineHeight: '1.7',
+        lineHeight: '1.9',
       },
       [theme.breakpoints.between('sm', 'md')]: {
         fontSize: '20px',

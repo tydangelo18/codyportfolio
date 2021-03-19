@@ -19,8 +19,8 @@ function AboutPage() {
       },
       [theme.breakpoints.between('sm', 'md')]: {
         display: 'flex',
-        flexFlow: 'row',
-        justifyContent: 'space-between',
+        flexFlow: 'column',
+        alignItems: 'center',
       },
     },
   }));

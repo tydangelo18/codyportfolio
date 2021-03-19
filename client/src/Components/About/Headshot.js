@@ -11,6 +11,10 @@ function Headshot() {
         display: 'flex',
         justifyContent: 'center',
       },
+      [theme.breakpoints.between('md', 'lg')]: {
+        display: 'flex',
+        justifyContent: 'center',
+      },
     },
     photo: {
       width: '500px',
@@ -27,6 +31,7 @@ function Headshot() {
       [theme.breakpoints.between('sm', 'md')]: {
         width: '500px',
         height: '600px',
+        marginLeft: '0px',
       },
     },
   }));
