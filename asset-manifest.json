@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/codyportfolio/client/static/css/main.53583e89.chunk.css",
+    "main.js": "/codyportfolio/client/static/js/main.1f55ac59.chunk.js",
+    "main.js.map": "/codyportfolio/client/static/js/main.1f55ac59.chunk.js.map",
+    "runtime-main.js": "/codyportfolio/client/static/js/runtime-main.c4e8d19b.js",
+    "runtime-main.js.map": "/codyportfolio/client/static/js/runtime-main.c4e8d19b.js.map",
+    "static/css/2.7fc9bc2b.chunk.css": "/codyportfolio/client/static/css/2.7fc9bc2b.chunk.css",
+    "static/js/2.8dc600c8.chunk.js": "/codyportfolio/client/static/js/2.8dc600c8.chunk.js",
+    "static/js/2.8dc600c8.chunk.js.map": "/codyportfolio/client/static/js/2.8dc600c8.chunk.js.map",
+    "index.html": "/codyportfolio/client/index.html",
+    "static/css/2.7fc9bc2b.chunk.css.map": "/codyportfolio/client/static/css/2.7fc9bc2b.chunk.css.map",
+    "static/css/main.53583e89.chunk.css.map": "/codyportfolio/client/static/css/main.53583e89.chunk.css.map",
+    "static/js/2.8dc600c8.chunk.js.LICENSE.txt": "/codyportfolio/client/static/js/2.8dc600c8.chunk.js.LICENSE.txt",
+    "static/media/animate.5c0ed4a3.jpg": "/codyportfolio/client/static/media/animate.5c0ed4a3.jpg",
+    "static/media/camera.3c283165.jpg": "/codyportfolio/client/static/media/camera.3c283165.jpg",
+    "static/media/cinema.d74d07fd.jpg": "/codyportfolio/client/static/media/cinema.d74d07fd.jpg",
+    "static/media/codyheadshot.ce0e94da.jpg": "/codyportfolio/client/static/media/codyheadshot.ce0e94da.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c4e8d19b.js",
+    "static/css/2.7fc9bc2b.chunk.css",
+    "static/js/2.8dc600c8.chunk.js",
+    "static/css/main.53583e89.chunk.css",
+    "static/js/main.1f55ac59.chunk.js"
+  ]
+}
